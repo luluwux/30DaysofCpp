@@ -1,0 +1,50 @@
+<h1>MarkHead Dönüştürücü Testi</h1>
+
+<p>Bu, paragraf (`<p>`) etiketleri için normal bir test metnidir. Programının bunu düzgün bir şekilde `<p>` etiketi içine alması gerekir.</p>
+
+<p>Bu satır <strong>kalın metin</strong> içerir.</p>
+<p>Bu satır <em>italik metin</em> içerir.</p>
+<p>Bu satırda ikisi birden var: <strong>Bu kalın</strong> ve <em>bu da italik</em>.</p>
+
+<p><a href="https://github.com/luluwux">Bu normal bir linktir</a>.</p>
+<p>Peki ya <strong><a href="https://github.com/luluwux">bu kalın bir link</a></strong>?</p>
+
+<hr>
+
+<h2>Özellik Testleri (H2)</h2>
+
+<p>Şimdi daha karmaşık senaryoları test edelim.</p>
+
+<blockquote><p>Bu bir alıntı (blockquote) satırıdır. Programının bunu `<blockquote><p>...</p></blockquote>` olarak sarmalaması gerekir.</p></blockquote>
+
+<p>Aşağıdaki satır tam olarak `---` içerdiği için yatay çizgi (`<hr>`) olmalıdır:</p>
+<hr>
+
+<p>Aşağıdaki satır ise bir paragraf olmalıdır, `<hr>` değil:</p>
+<p>Bu satırın ortasında --- bir çizgi var.</p>
+
+<h3>HTML Passthrough Testi (H3)</h3>
+
+<p>Bu bölüm, programının mevcut HTML'e dokunmama özelliğini test eder.</p>
+
+<div align="center">
+<p>    Programın bu satıra ve içindekilere dokunmaması, <p> etiketi eklememesi gerekir.</p>
+</div>
+
+<p>Aşağıdaki satırın başında boşluklar var ama hala HTML:</p>
+  <section>
+     <h2>*Bu bir HTML H2 Başlığıdır*, Markdown değil!</h2>
+     <p>Programın bu satırlara dokunmamasını bekliyoruz.</p>
+  </section>
+
+<hr>
+
+<h2>Hata Ayıklama Testleri</h2>
+
+<p>Bu satırda boşluk olmadığı için başlık olmamalı:</p>
+<p>#BaşlıkDeğil</p>
+
+<p>Bu satır düz metindir.</p>
+<p><em>Bu da italik olmalı.</em></p>
+
+<p>Test bitti.</p>
