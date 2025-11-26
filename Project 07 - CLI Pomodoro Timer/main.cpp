@@ -17,6 +17,7 @@ int main() {
           << std::setw(2) << std::setfill('0') << rSeconds 
           << "\r" << std::flush;
 
+        // 1 Saniyeliğine durdur ve ardından devam ettir
         std::this_thread::sleep_for(std::chrono::seconds(1));
         totalTime--;
     }
