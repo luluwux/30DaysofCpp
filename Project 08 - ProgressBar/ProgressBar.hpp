@@ -1,5 +1,6 @@
 /**
  * @file ProgressBar.hpp
+ * @author luluwux
  * @brief A lightweight, header-only C++ Progress Bar library for CLI applications.
  * @version 1.1.0
  * @date 2025
